@@ -321,19 +321,3 @@ entropy3 <- entropy3 %>% arrange (desc(`number of tumors with mutations`))
 write_csv(entropy3,paste0(gene_examined," entropy analysis in ",disease,"_final results.csv")) #results are saved to working directory
 entropy4 <- filter(entropy3,!entropy3$`number of tumors with mutations`<15)
 write_csv(entropy4,paste0(gene_examined," entropy analysis in ",disease,"_final results, >15 mutations.csv")) #results are saved to working directory
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
